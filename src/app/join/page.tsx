@@ -53,7 +53,7 @@ export default function JoinPage() {
       layout="page"
       title="Onboarding Process"
       sections={[
-        { heading: "How to join", content: { type: "numbered-list", items: ["Sign up online", "Choose plan", "Start shipping"] } }
+        { heading: "How to join", content: { items: ["Sign up online", "Choose plan", "Start shipping"] } }
       ]}
     />
   </div>
