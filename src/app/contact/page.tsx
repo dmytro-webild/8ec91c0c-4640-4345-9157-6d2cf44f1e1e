@@ -42,7 +42,7 @@ export default function ContactPage() {
       layout="page"
       title="Contact Us"
       sections={[
-        { heading: "Office Locations", content: { text: "Riyadh, Jeddah, Dammam" } }
+        { heading: "Office Locations", content: { type: "paragraph", text: "Riyadh, Jeddah, Dammam" } }
       ]}
     />
   </div>
