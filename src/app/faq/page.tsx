@@ -42,7 +42,7 @@ export default function FAQPage() {
       layout="page"
       title="Frequently Asked Questions"
       sections={[
-        { heading: "General Information", content: "Cloud Shelf is the leading logistics provider." }
+        { heading: "General Information", content: [{ text: "Cloud Shelf is the leading logistics provider." }] }
       ]}
     />
   </div>
