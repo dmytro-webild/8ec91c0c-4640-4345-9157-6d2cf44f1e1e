@@ -7,7 +7,7 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import LegalSection from '@/components/legal/LegalSection';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 
-export default function LandingPage() {
+export default function ContactPage() {
   return (
     <ThemeProvider
         defaultButtonVariant="shift-hover"
@@ -25,36 +25,15 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingInline
       navItems={[
-        {
-          name: "Home",
-          id: "/",
-        },
-        {
-          name: "About Us",
-          id: "/about",
-        },
-        {
-          name: "Services",
-          id: "/services",
-        },
-        {
-          name: "Track Order",
-          id: "/track",
-        },
-        {
-          name: "FAQ",
-          id: "/faq",
-        },
-        {
-          name: "Contact Us",
-          id: "/contact",
-        },
+        { name: "Home", id: "/" },
+        { name: "About Us", id: "/about" },
+        { name: "Services", id: "/services" },
+        { name: "Track Order", id: "/track" },
+        { name: "FAQ", id: "/faq" },
+        { name: "Contact Us", id: "/contact" }
       ]}
       brandName="Cloud Shelf"
-      button={{
-        text: "Join Now",
-        href: "/join",
-      }}
+      button={{ text: "Join Now", href: "/join" }}
     />
   </div>
 
@@ -63,13 +42,7 @@ export default function LandingPage() {
       layout="page"
       title="Contact Us"
       sections={[
-        {
-          heading: "Office Locations",
-          content: {
-            type: "paragraph",
-            text: "Riyadh, Jeddah, Dammam",
-          },
-        },
+        { heading: "Office Locations", content: { text: "Riyadh, Jeddah, Dammam" } }
       ]}
     />
   </div>
@@ -81,15 +54,7 @@ export default function LandingPage() {
       useInvertedBackground={false}
       title="Business Inquiries"
       description="For partnerships and sales."
-      features={[
-        {
-          id: "c1",
-          title: "Sales Email",
-          subtitle: "sales@cloudshelf.com",
-          category: "Sales",
-          value: "Fast response",
-        },
-      ]}
+      features={[{ id: "c1", title: "Sales Email", subtitle: "sales@cloudshelf.com", category: "Sales", value: "Fast response" }]}
     />
   </div>
 
@@ -97,32 +62,8 @@ export default function LandingPage() {
       <FooterBaseReveal
       logoText="Cloud Shelf"
       columns={[
-        {
-          title: "Company",
-          items: [
-            {
-              label: "About",
-              href: "/about",
-            },
-            {
-              label: "FAQ",
-              href: "/faq",
-            },
-          ],
-        },
-        {
-          title: "Support",
-          items: [
-            {
-              label: "Track Order",
-              href: "/track",
-            },
-            {
-              label: "Contact",
-              href: "/contact",
-            },
-          ],
-        },
+        { title: "Company", items: [{ label: "About", href: "/about" }, { label: "FAQ", href: "/faq" }] },
+        { title: "Support", items: [{ label: "Track Order", href: "/track" }, { label: "Contact", href: "/contact" }] }
       ]}
     />
   </div>
